@@ -4,4 +4,5 @@ module "component" {
 
   cidr       = each.value["cidr"]
   subnets     = each.value["subnets"]
+
 }
