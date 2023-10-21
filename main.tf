@@ -11,7 +11,7 @@ module "vpc" {
   env                         = var.env
 }
 
-module "alb" {
+/*module "alb" {
   source     = "git::https://github.com/chinna3107/p1-tf-module-alb.git"
   for_each   = var.alb
 
@@ -23,7 +23,7 @@ module "alb" {
   tags                       = var.tags
   env                        = var.env
   sg_port                    = each.value["sg_port"]
-}
+}*/
 
 
 
