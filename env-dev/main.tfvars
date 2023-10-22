@@ -60,7 +60,6 @@ docdb = {
 
 rds = {
   main = {
-
     rds_type                  = "mysql"
     db_port                   = 3306
     engine_family             = "aurora-mysql5.7"
