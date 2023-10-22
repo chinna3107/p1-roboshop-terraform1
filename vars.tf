@@ -7,4 +7,3 @@ variable "tags" {}
 variable "env" {}
 variable "alb" {}
 variable "docdb" {}
-# variable "engine_version" {}
