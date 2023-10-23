@@ -7,6 +7,6 @@ variable "tags" {}
 variable "env" {}
 variable "alb" {}
 variable "docdb" {}
-variable "rds" {}
-variable "engine_version" {}
-variable "engine_family" {}
+#variable "rds" {}
+#variable "engine_version" {}
+#variable "engine_family" {}
