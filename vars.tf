@@ -11,4 +11,4 @@ variable "rds" {}
 variable "engine_version" {}
 variable "engine_family" {}
 variable "elasticache" {}
-variable "elasticache_type" {}
+
