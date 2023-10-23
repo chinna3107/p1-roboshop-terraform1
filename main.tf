@@ -44,7 +44,7 @@ module "docdb" {
 }
 
 
-module "rds" {
+/*module "rds" {
   source     = "git::https://github.com/chinna3107/p1-tf-module-rds.git"
   tags                       = var.tags
   env                        = var.env
@@ -64,7 +64,7 @@ module "rds" {
   skip_final_snapshot      = each.value["skip_final_snapshot"]
   instance_count           = each.value["instance_count"]
   instance_class           = each.value["instance_class"]
-}
+}*/
 
 
 
