@@ -58,7 +58,7 @@ docdb = {
   }
 }
 
-/*
+
 rds = {
   main = {
     rds_type                  = "mysql"
@@ -72,4 +72,4 @@ rds = {
     instance_count          = 1
     instance_class          = "db.t3.small"
   }
-}*/
+}
