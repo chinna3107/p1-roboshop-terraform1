@@ -72,6 +72,7 @@ module "elasticache" {
   env                        = var.env
 
   for_each                = var.elasticache
+
   subnet_ids              = local.db_subnets
   vpc_id                  = local.vpc_id
   sg_ingress_cidr         = local.app_subnets_cidr
@@ -82,6 +83,7 @@ module "elasticache" {
   node_type               = each.value["node_type"]
   num_cache_nodes         = each.value["num_cache_nodes"]
   engine_version          = each.value["engine_version"]
+  parameter_group_name    = each.value["parameter_group_name"]
 }
 
 
