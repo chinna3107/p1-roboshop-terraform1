@@ -74,6 +74,7 @@ rds = {
     instance_class            = "db.t3.small"
   }
 }
+/*
 
 elasticache = {
   main = {
@@ -86,6 +87,7 @@ elasticache = {
     engine_version   = "6.2"
   }
 }
+*/
 
 /*
 rabbitmq = {

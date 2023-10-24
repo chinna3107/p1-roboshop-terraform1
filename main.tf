@@ -66,6 +66,7 @@ module "rds" {
   instance_class           = each.value["instance_class"]
 }
 
+/*
 module "elasticache" {
   source = "git::https://github.com/chinna3107/p1-tf-module-elasticache.git"
   tags   = var.tags
@@ -85,6 +86,7 @@ module "elasticache" {
   engine_version   = each.value["engine_version"]
  # parameter_group_name = each.value["parameter_group_name"]
 }
+*/
 
 /*module "rabbitmq" {
   source  = "git::https://github.com/chinna3107/p1-tf-module-rabbitmq.git"
