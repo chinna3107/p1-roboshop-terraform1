@@ -3,6 +3,8 @@ default_vpc_cidr           = "172.31.0.0/16"
 default_vpc_route_table_id = "rtb-0be4e5cff1138a172"
 zone_id                    = "Z02791651VB89NZU8FH7C"
 env                        = "dev"
+ssh_ingress_cidr           = ["172.31.23.153/32"]
+
 
 tags = {
   company_name  = " ready to move"
@@ -91,7 +93,7 @@ elasticache = {
 
 rabbitmq = {
   main = {
-    ssh_ingress_cidr = ["172.31.23.153/32"]
+    #   ssh_ingress_cidr = ["172.31.23.153/32"]
     instance_type    = "t3.small"
   }
 }
