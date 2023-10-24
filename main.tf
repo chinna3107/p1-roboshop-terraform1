@@ -87,7 +87,7 @@ module "elasticache" {
 }
 
 
-/*module "rabbitmq" {
+module "rabbitmq" {
   source  = "git::https://github.com/chinna3107/p1-tf-module-rabbitmq.git"
   tags    = var.tags
   env     = var.env
@@ -101,6 +101,6 @@ module "elasticache" {
   instance_type    = each.value["instance_type"]
   ssh_ingress_cidr = var.ssh_ingress_cidr
 
-}*/
+}
 
 
