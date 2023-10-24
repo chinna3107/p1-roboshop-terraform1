@@ -86,7 +86,7 @@ module "elasticache" {
   parameter_group_name = each.value["parameter_group_name"]
 }
 
-module "rabbitmq" {
+/*module "rabbitmq" {
   source  = "git::https://github.com/chinna3107/p1-tf-module-rabbitmq.git"
   tags    = var.tags
   env     = var.env
@@ -99,6 +99,7 @@ module "rabbitmq" {
   sg_ingress_cidr  = local.app_subnets_cidr
   instance_type    = each.value["instance_type"]
   ssh_ingress_cidr = var.ssh_ingress_cidr
-}
+
+}*/
 
 
