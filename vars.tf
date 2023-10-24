@@ -12,3 +12,4 @@ variable "engine_version" {}
 variable "engine_family" {}
 variable "elasticache" {}
 variable "rabbitmq" {}
+variable "zone_id" {}
