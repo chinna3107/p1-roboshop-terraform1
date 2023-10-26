@@ -126,6 +126,6 @@ module "app" {
   vpc_id = local.vpc_id
   subnet_ids = local.app_subnets
 
- # alb = lookup(module.alb, "private", null)
+  alb = lookup(lookup(module.alb, "private", null),"dns_name", null)
 
 }
