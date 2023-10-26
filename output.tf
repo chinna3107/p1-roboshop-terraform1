@@ -3,5 +3,5 @@
 }*/
 
 output "subnet" {
- value = data.aws_subnets.subnets.ids
+ value = module.alb
 }
