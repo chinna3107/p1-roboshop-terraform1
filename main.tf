@@ -105,7 +105,7 @@ module "rabbitmq" {
 }
 */
 
-module "apps" {
+module "app" {
   source = "git::https://github.com/chinna3107/p1-tf-module-app.git"
 
   tags    = var.tags
@@ -120,4 +120,5 @@ module "apps" {
   sg_ingress_cidr = local.app_subnets_cidr
   vpc_id = local.vpc_id
   subnet_ids = local.app_subnets
+
 }
