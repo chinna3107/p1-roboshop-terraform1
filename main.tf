@@ -111,12 +111,13 @@ module "app" {
   tags    = var.tags
   env     = var.env
   zone_id = var.zone_id
+  ssh_ingress_cidr = var.ssh_ingress_cidr
 
   for_each = var.apps
-
   copmponent = each.name
   port = each.value["port"]
+
   sg_ingress_cidr = local.app_subnets_cidr
-  ssh_ingress_cidr = var.ssh_ingress_cidr
+  vpc_id = local.vpc_id
 
 }
