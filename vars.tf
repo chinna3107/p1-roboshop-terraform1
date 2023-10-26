@@ -8,9 +8,9 @@ variable "env" {}
 variable "alb" {}
 variable "docdb" {}
 variable "rds" {}
-#variable "engine_version" {}
-#variable "engine_family" {}
 variable "elasticache" {}
 variable "rabbitmq" {}
 variable "zone_id" {}
 variable "ssh_ingress_cidr" {}
+variable "apps" {}
+variable "port" {}

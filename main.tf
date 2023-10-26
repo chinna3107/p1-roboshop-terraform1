@@ -25,6 +25,7 @@ module "alb" {
   sg_port                    = each.value["sg_port"]
 }
 
+/*
 module "docdb" {
   source     = "git::https://github.com/chinna3107/p1-tf-module-docdb.git"
    tags                       = var.tags
@@ -102,5 +103,20 @@ module "rabbitmq" {
   ssh_ingress_cidr = var.ssh_ingress_cidr
 
 }
+*/
 
+module "app" {
+  source = "git::https://github.com/chinna3107/p1-tf-module-app.git"
 
+  tags    = var.tags
+  env     = var.env
+  zone_id = var.zone_id
+
+  for_each = var.apps
+
+  copmponent = each.name
+  port = each.value["port"]
+  sg_ingress_cidr = local.app_subnets_cidr
+  ssh_ingress_cidr = var.ssh_ingress_cidr
+
+}
