@@ -105,7 +105,7 @@ module "rabbitmq" {
 }
 */
 
-module "app" {
+module "apps" {
   source = "git::https://github.com/chinna3107/p1-tf-module-app.git"
 
   tags    = var.tags
