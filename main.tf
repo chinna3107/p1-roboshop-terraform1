@@ -26,7 +26,6 @@ module "alb" {
 
 }
 
-/*
 module "docdb" {
   source     = "git::https://github.com/chinna3107/p1-tf-module-docdb.git"
    tags                       = var.tags
@@ -44,7 +43,6 @@ module "docdb" {
   instance_count          = each.value["instance_count"]
   instance_class          = each.value["instance_class"]
 }
-
 
 module "rds" {
   source     = "git::https://github.com/chinna3107/p1-tf-module-rds.git"
@@ -104,7 +102,6 @@ module "rabbitmq" {
   ssh_ingress_cidr = var.ssh_ingress_cidr
 
 }
-*/
 
 module "app" {
   source = "git::https://github.com/chinna3107/p1-tf-module-app.git"
