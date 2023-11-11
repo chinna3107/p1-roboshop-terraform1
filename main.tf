@@ -26,6 +26,7 @@ module "alb" {
 
 }
 
+
 module "docdb" {
   source     = "git::https://github.com/chinna3107/p1-tf-module-docdb.git"
    tags                       = var.tags
@@ -131,3 +132,7 @@ module "app" {
   private_listener  =  lookup(lookup(lookup(module.alb,"private", null),"listener", null), "arn", null)
   public_listener  =  lookup(lookup(lookup(module.alb,"public", null),"listener", null), "arn", null)
 }
+
+
+
+
