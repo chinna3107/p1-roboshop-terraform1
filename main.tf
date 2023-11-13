@@ -104,6 +104,7 @@ module "rabbitmq" {
 
 }
 
+/*
 module "app" {
   source = "git::https://github.com/chinna3107/p1-tf-module-app.git"
 
@@ -131,7 +132,7 @@ module "app" {
   public_alb_name = lookup(lookup(lookup(module.alb, "public", null),"alb", null), "dns_name", null)
   private_listener  =  lookup(lookup(lookup(module.alb,"private", null),"listener", null), "arn", null)
   public_listener  =  lookup(lookup(lookup(module.alb,"public", null),"listener", null), "arn", null)
-}
+}*/
 
 
 
