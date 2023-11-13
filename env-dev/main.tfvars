@@ -73,7 +73,7 @@ rds = {
     preferred_backup_window   = "07:00-09:00"
     skip_final_snapshot       = true
     instance_count            = 1
-    instance_class            = "db.t3.small"
+    instance_class            = "db.t3.micro"
   }
 }
 
@@ -93,13 +93,13 @@ elasticache = {
 
 rabbitmq = {
   main = {
-    instance_type    = "t3.small"
+    instance_type    = "t3.micro"
   }
 }
 
 apps = {
   frontend = {
-       instance_type      = "t3.small"
+       instance_type      = "t3.micro"
        port               = 80
        desired_capacity   = 1
        max_size           = 3
@@ -109,7 +109,7 @@ apps = {
        parameters         = []
      }
   catalogue = {
-    instance_type      = "t3.small"
+    instance_type      = "t3.micro"
     port               = 8080
     desired_capacity   = 1
     max_size           = 3
@@ -119,7 +119,7 @@ apps = {
     parameters         = ["docdb"]
   }
   cart = {
-    instance_type      = "t3.small"
+    instance_type      = "t3.micro"
     port               = 8080
     desired_capacity   = 1
     max_size           = 3
@@ -129,7 +129,7 @@ apps = {
     parameters         = []
   }
   user = {
-    instance_type      = "t3.small"
+    instance_type      = "t3.micro"
     port               = 8080
     desired_capacity   = 1
     max_size           = 3
@@ -139,7 +139,7 @@ apps = {
     parameters         = ["docdb"]
   }
   payment = {
-    instance_type      = "t3.small"
+    instance_type      = "t3.micro"
     port               = 8080
     desired_capacity   = 1
     max_size           = 3
@@ -149,7 +149,7 @@ apps = {
     parameters         = []
   }
   shipping = {
-    instance_type      = "t3.small"
+    instance_type      = "t3.micro"
     port               = 8080
     desired_capacity   = 1
     max_size           = 3
