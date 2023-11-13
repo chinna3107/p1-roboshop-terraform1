@@ -8,6 +8,8 @@ output "alb" {
 }*/
 
 
+/*
 output  "rds" {
  value = module.rds
 }
+*/
