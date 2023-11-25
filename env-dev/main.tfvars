@@ -1,4 +1,3 @@
-/*
 default_vpc_id             = "vpc-0eeffb6e08ca197f9"
 default_vpc_cidr           = "172.31.0.0/16"
 default_vpc_route_table_id = "rtb-0be4e5cff1138a172"
@@ -160,4 +159,4 @@ apps = {
     parameters         = ["rds"]
   }
 }
-*/
+
