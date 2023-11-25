@@ -10,6 +10,7 @@ module "vpc" {
   tags                       = var.tags
   env                         = var.env
 }
+/*
 
 module "alb" {
   source     = "git::https://github.com/chinna3107/p1-tf-module-alb.git"
@@ -135,6 +136,7 @@ module "app" {
   public_listener  =  lookup(lookup(lookup(module.alb,"public", null),"listener", null), "arn", null)
 }
 
+*/
 
 
 
