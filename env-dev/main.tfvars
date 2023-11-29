@@ -4,7 +4,7 @@ default_vpc_route_table_id = "rtb-0be4e5cff1138a172"
 zone_id                    = "Z02791651VB89NZU8FH7C"
 env                        = "dev"
 ssh_ingress_cidr           = ["172.31.23.153/32"]
-
+monitoring_ingress_cidr    =["172.31.45.83/32"]
 
 tags = {
   company_name  = " ready to move"
