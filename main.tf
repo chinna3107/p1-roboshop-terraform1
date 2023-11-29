@@ -26,7 +26,6 @@ module "alb" {
 
 }
 
-/*
 
 module "docdb" {
   source     = "git::https://github.com/chinna3107/p1-tf-module-docdb.git"
@@ -104,7 +103,6 @@ module "rabbitmq" {
   ssh_ingress_cidr = var.ssh_ingress_cidr
 
 }
-*/
 
 module "app" {
   # depends_on = [module.docdb, module.alb, module.elasticache, module.rabbitmq, module.rds]
